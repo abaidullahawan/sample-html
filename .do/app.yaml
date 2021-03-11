@@ -1,8 +1,14 @@
-name: sample-html
+domains:
+- domain: teerkaman.com.pk
+  type: PRIMARY
+  zone: teerkaman.com.pk
+name: teerkaman
+region: blr
 static_sites:
 - environment_slug: html
-  github:
+  git:
     branch: main
-    deploy_on_push: true
-    repo: digitalocean/sample-html
-  name: sample-html
+    repo_clone_url: https://github.com/abaidullahawan/sample-html.git
+  name: teerkaman
+  routes:
+  - path: /teerkaman
